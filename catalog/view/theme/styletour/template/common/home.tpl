@@ -215,7 +215,7 @@
 						</div> <!-- /.content -->
 					</div>
 				</div>
-				<?=column_left?>
+				<?=$column_left?>
 			</div>
 		</div>
 	</section>
