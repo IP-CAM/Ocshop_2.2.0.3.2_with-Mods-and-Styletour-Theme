@@ -215,7 +215,7 @@
 						</div> <!-- /.content -->
 					</div>
 				</div>
-				<?=colump_left?>
+				<?=column_left?>
 			</div>
 		</div>
 	</section>
