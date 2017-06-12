@@ -14,6 +14,7 @@
 	<script src="catalog/view/theme/styletour/js/modernizr.custom.17475.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="catalog/view/theme/styletour/js/bootstrap.min.js"></script>
+	<script src="catalog/view/theme/styletour/js/common.js"></script>
 	<script src="catalog/view/theme/styletour/js/scripts.js"></script>
 	<?php foreach($links as $link): ?>
 		<link href="<?=$link['href']?>" rel="<?=$link['rel']?>">
@@ -51,7 +52,9 @@
 							<li><a href="#">Support</a></li>
 							<li><a href="#">Free Shipping Over $50</a></li>
 							<li><a href="#">Articles</a></li>
-							<li class="dropdown">
+							<?=$language?>
+							<?//=$currency?>
+							<!-- <li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="flag"><img src="catalog/view/theme/styletour/img/flag.jpg" alt=""></span>English <span class="caret"></span></a>
 								<ul class="dropdown-menu">
 									<li><a href="#">France</a></li>
@@ -69,7 +72,7 @@
 									<li><a href="#">currecy: eur</a></li>
 									<li><a href="#">currecy: rur</a></li>
 								</ul>
-							</li>
+							</li> -->
 						</ul>
 
 						<ul class="nav navbar-nav navbar-right">
