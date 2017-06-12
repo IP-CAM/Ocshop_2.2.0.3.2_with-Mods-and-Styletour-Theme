@@ -53,7 +53,7 @@
 							<li><a href="#">Free Shipping Over $50</a></li>
 							<li><a href="#">Articles</a></li>
 							<?=$language?>
-							<?//=$currency?>
+							<?=$currency?>
 							<!-- <li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="flag"><img src="catalog/view/theme/styletour/img/flag.jpg" alt=""></span>English <span class="caret"></span></a>
 								<ul class="dropdown-menu">
