@@ -1,4 +1,4 @@
-<section class="bottom-content">
+	<section class="bottom-content">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4">

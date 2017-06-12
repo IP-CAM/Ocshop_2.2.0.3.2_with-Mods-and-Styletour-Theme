@@ -1,5 +1,5 @@
-
 <?=$header?>
+
 	<section class="main-content">
 		<div class="container">
 			<div class="row">
@@ -220,4 +220,4 @@
 		</div>
 	</section>
 
-<?=$footer?>
+	<?=$footer?>
