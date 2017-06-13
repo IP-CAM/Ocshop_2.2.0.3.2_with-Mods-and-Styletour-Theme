@@ -72,7 +72,8 @@
 							<li><a href="<?=$login?>"><?=$text_login?></a></li>
 							<li><a href="<?=$register?>"><?=$text_register?></a></li>
 						<?php endif; ?>
-							<li><a href="#" class="btn-red"><span class="glyphicon glyphicon-shopping-cart"></span>shopping cart</a></li>
+							<?=$cart?>
+							<!-- <li><a href="#" class="btn-red"><span class="glyphicon glyphicon-shopping-cart"></span>shopping cart</a></li> -->
 						</ul>
 					</div><!-- /.navbar-collapse -->
 				</div><!-- /.container-fluid -->
