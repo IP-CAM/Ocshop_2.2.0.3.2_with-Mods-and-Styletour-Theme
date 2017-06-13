@@ -1,4 +1,5 @@
 <?=$header?>
+<?=$content_top?>
 
 	<section class="main-content">
 		<div class="container">
