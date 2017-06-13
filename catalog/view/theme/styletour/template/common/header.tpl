@@ -138,9 +138,3 @@
 			</div><!-- /.main-menu -->
 		</div><!-- /.main-menu-wrap -->
 	</header>
-
-	<!-- <section class="main-slogan">
-		<div class="container">
-			<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</h1>
-		</div>
-	</section> -->
