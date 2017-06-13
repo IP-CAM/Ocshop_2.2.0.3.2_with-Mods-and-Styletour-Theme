@@ -30,7 +30,7 @@
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<body>
+<body class="<?=$class?>">
 	
 	<header>
 		<div class="menu-top">
@@ -73,7 +73,6 @@
 							<li><a href="<?=$register?>"><?=$text_register?></a></li>
 						<?php endif; ?>
 							<?=$cart?>
-							<!-- <li><a href="#" class="btn-red"><span class="glyphicon glyphicon-shopping-cart"></span>shopping cart</a></li> -->
 						</ul>
 					</div><!-- /.navbar-collapse -->
 				</div><!-- /.container-fluid -->
@@ -92,7 +91,12 @@
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 								</button>
-								<a class="navbar-brand" href="<?=$home?>"><img src="<?=$logo?>" alt="<?=$name?>"><span><?=$name?></span></a>
+								<a class="navbar-brand" href="<?=$home?>">
+								<?php if($home == $og_url): ?>
+									<img src="<?=$logo?>" alt="<?=$name?>">
+								<?php endif; ?>
+									<span class="<?=$class?>"><?=$name?></span>
+								</a>
 							</div>
 
 							<!-- Collect the nav links, forms, and other content for toggling -->
@@ -134,7 +138,7 @@
 			</div><!-- /.main-menu -->
 		</div><!-- /.main-menu-wrap -->
 	</header>
-	
+
 	<!-- <section class="main-slogan">
 		<div class="container">
 			<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</h1>
