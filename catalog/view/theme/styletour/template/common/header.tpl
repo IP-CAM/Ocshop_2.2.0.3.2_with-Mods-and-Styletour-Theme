@@ -92,19 +92,35 @@
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 								</button>
-								<a class="navbar-brand" href="#"><img src="catalog/view/theme/styletour/img/logo.png" alt="StyleTour"><span>StyleTour</span></a>
+								<a class="navbar-brand" href="<?=$home?>"><img src="<?=$logo?>" alt="<?=$name?>"><span><?=$name?></span></a>
 							</div>
 
 							<!-- Collect the nav links, forms, and other content for toggling -->
 							<div class="collapse navbar-collapse" id="main-menu">
-								<ul class="nav navbar-nav">
-									<li><a href="#">Shop</a></li>
-									<li><a href="#">Men</a></li>
-									<li><a href="#">Women</a></li>
-									<li><a href="#">Kids</a></li>
-									<li><a href="#">Accessories</a></li>
-									<li><a href="#">Sale</a></li>
-								</ul>
+<ul class="nav navbar-nav">
+<?php foreach($categories as $category): ?>
+	<?php if($category['children']): ?>
+		<li class="dropdown">
+			<a href="<?=$category['href']?>" class="dropdown-toggle" data-toggle="dropdown"><?=$category['name']?> <span class="caret"></span></a>
+			<ul class="dropdown-menu">
+				<?php foreach($category['children'] as $child): ?>
+					<li><a href="<?=$child['href']?>"><?=$child['name']?></a></li>
+				<?php endforeach; ?>
+				<li role="separator" class="divider"></li>
+				<li><a href="<?php echo $category['href']; ?>" class="see-all"><?php echo $text_all; ?> <?php echo $category['name']; ?></a></li>
+			</ul>
+		</li>
+	<?php else: ?>
+		<li><a href="<?=$category['href']?>"><?=$category['name']?></a></li>
+	<?php endif; ?>
+<?php endforeach; ?>
+	<!-- <li><a href="#">Shop</a></li>
+	<li><a href="#">Men</a></li>
+	<li><a href="#">Women</a></li>
+	<li><a href="#">Kids</a></li>
+	<li><a href="#">Accessories</a></li>
+	<li><a href="#">Sale</a></li> -->
+</ul>
 
 								<div class="nav navbar-nav navbar-right">
 									<form class="navbar-form navbar-left" role="search" method="get" action="">
